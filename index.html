@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mark Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="javas.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            <div class="logo-text">Mark Kabuba</div>
+        </div>
+        <nav>
+            <div class="togglebtn" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navlinks" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#getintouch">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Background Area wraps these sections -->
+    <div class="background-area">
+        <section id="home" class="hero-section">
+            <div class="content">
+                <div class="intro-text">
+                    <div class="slider-wrapper">
+                        <img src="jamaa.jpg" alt="Mark Kabuba" class="slide" id="img1" />
+                      </div>
+                                          
+                    <h1>Hi, I'm Mark Kabuba</h1>
+                    <p>Web Designer | Graphic Designer | Tech Enthusiast</p>
+                    <a href="#getintouch" class="btn">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>
+                I'm Mark Kabuba, a passionate Web and Graphic Designer. I bring creativity and functionality together. I have a keen eye for aesthetics and a strong grasp of modern web technologies. I create digital experiences that are both visually engaging and user-friendly.
+            </p>
+        </section>
+        
+
+        <section id="experience" class="experience-section">
+            <h2>My Experience</h2>
+            <div class="experience-card">
+                <h3>Ecotech Energy Solutions</h3>
+                <p>Year-end performance report & data analysis</p>
+                <video autoplay muted loop playsinline class="experience-video">
+                    <source src="EcoTechl Business Report Presentation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kabubamark@gmail.com">kabubamark@gmail.com</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/markkabuba</a></p>
+            <p>Phone: <a href="tel:+1234567890">+254 729 276 019</a></p>
+        </section>
+    </div>
+
+    <footer id="getintouch" class="footer">
+        <p>&copy; 2025 Mark Kabuba. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle Menu
+        document.getElementById("menu-toggle").onclick = function () {
+            document.getElementById("nav-links").classList.toggle("active");
+        };
+    </script>
+</body>
+</html>
